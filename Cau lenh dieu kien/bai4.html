@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseInt(prompt('input'))
+    let b = parseInt(prompt('input'))
+    let c = parseInt(prompt('input'))
+
+    d = b * b - 4 * a * c
+
+    if (d < 0) {
+        alert('phuong trinh vo nghiem')
+    } else if (d == 0) {
+        x1 = x2 = -b / (2 * a)
+        alert('phuong trinh co nghiem kep: ' + x1 + ' va ' + x2)
+    } else if (d > 0) {
+        x1 = (-b + Math.sqrt(d)) / (2 * a)
+        x2 = (-b - Math.sqrt(d)) / (2 * a)
+        alert('phuong trinh co 2 nghiem phan biet: ' + x1 + ' va ' + x2)
+
+    }
+</script>
+</html>
